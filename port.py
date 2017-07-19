@@ -1,10 +1,5 @@
-#for python 2
-#from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
-#for python 3
-from http.server import BaseHTTPRequestHandler, HTTPServer
-
+from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 import ssl
-
 
 def p():
     content='test'
@@ -32,12 +27,12 @@ class S(BaseHTTPRequestHandler):
         #self.send_response(200)
         #self.end_headers()
         self.wfile.write(p())
-#        data = simplejson.loads(self.data_string)
-#        with open("test123456.json", "w") as outfile:
-#            simplejson.dump(data, outfile)
-#        print "{}".format(data)
-#        f = open("for_presen.py")
-#        self.wfile.write(f.read())
+#       data = simplejson.loads(self.data_string)
+#       with open("test123456.json", "w") as outfile:
+#           simplejson.dump(data, outfile)
+#       print "{}".format(data)
+#       f = open("for_presen.py")
+#       self.wfile.write(f.read())
         return
 
 
