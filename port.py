@@ -1,10 +1,8 @@
 #for python 2
-#import SocketServer
 #from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
-
 #for python 3
 from http.server import BaseHTTPRequestHandler, HTTPServer
-import socketserver
+
 import ssl
 
 
